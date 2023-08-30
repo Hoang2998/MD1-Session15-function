@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let numone = +prompt("nhap so thu nhat")
+    //     let numtwo = +prompt("nhap so thu hai")
+    //     function tinhTongtu (a,b){
+    //         let total = 0;
+    //         for(let i=a;i<=b;i++){
+    //             total += i
+    //         }
+    //         console.log(total)
+    //     }
+    // tinhTongtu(numone,numtwo)
+
+    let sdt;
+    function xinSoDt(callback){
+        console.log("abccc")
+        console.log("bcd")
+        setTimeout(()=>{
+            sdt="12345"
+            callback(sdt);
+        },3000);
+    }
+    function socomoi(sdtTuoi){
+        console.log(`goi cho tuoi ${sdtTuoi}`);
+    }
+    xinSoDt(socomoi);
+    </script>
+</body>
+</html>
